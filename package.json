@@ -4,7 +4,11 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/ferfox88/ajs-3/issues"
   },
-  "homepage": "https://github.com/ferfox88/ajs-3#readme"
+  "homepage": "https://github.com/ferfox88/ajs-3#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.4",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
